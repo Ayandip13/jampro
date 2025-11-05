@@ -15,8 +15,17 @@ function Home() {
           share, and grow together.
         </p>
         <span className="login-link" onClick={() => navigate("/Classroom")}>
-            Get Started
-          </span>
+          Get Started
+        </span>
+        <p
+          style={{
+            backgroundColor: "#4cccff",
+            height: "0.2px",
+            width: "25%",
+            marginInline: "auto",
+            marginTop: "7px",
+          }}
+        />
       </div>
     </section>
   );

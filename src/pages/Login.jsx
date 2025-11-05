@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <section className="form-container">
       <h2>Login</h2>
@@ -27,9 +28,9 @@ function Login() {
 
         <p className="form-footer">
           Don't have an account?{" "}
-          <a href="/signup" className="signup-link">
+          <span className="login-link" onClick={() => navigate("/signup")}>
             Sign Up
-          </a>
+          </span>
         </p>
       </form>
     </section>
