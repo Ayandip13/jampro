@@ -14,9 +14,9 @@ function Home() {
           A collaborative platform where teachers empower students to learn,
           share, and grow together.
         </p>
-        <button className="get-started" onClick={() => navigate("/classroom")}>
-          Get Started
-        </button>
+        <span className="login-link" onClick={() => navigate("/Classroom")}>
+            Get Started
+          </span>
       </div>
     </section>
   );
